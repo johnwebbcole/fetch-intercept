@@ -35,7 +35,7 @@ module.exports = function attach(env) {
     try {
       require('whatwg-fetch');
     } catch (err) {
-      throw Error('No fetch avaibale. Unable to register fetch-intercept');
+      throw Error('No fetch available. Unable to register fetch-intercept');
     }
   }
   env.fetch = (function (fetch) {
